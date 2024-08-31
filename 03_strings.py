@@ -6,7 +6,7 @@ my_other_string = "Mi otro String"
 print(len(my_string))
 print(len(my_other_string))
 
-print( my_string + " " + my_other_string)
+print(my_string + " " + my_other_string)
 
 my_new_line_string = "Este es un String\ncon salto de línea"
 print(my_new_line_string)
@@ -20,18 +20,18 @@ print(my_escape_string)
 # Formateo
 
 name, surname, age = "Yensi Jesús", "González Nova", 22
-print("Mi nombre es {} {} y mi edad es {}" .format(name, surname, age))
-print("Mi nombre es %s %s y mi edad es %s" %(name, surname,age))
+print("Mi nombre es {} {} y mi edad es {}".format(name, surname, age))
+print("Mi nombre es %s %s y mi edad es %s" % (name, surname, age))
 print("Mi nombre es " + name + " " + surname + " y mi edad es " + str(age))
 print(f"Mi nombre {name} {surname} y mi edad es {age}")
 
 # Desempaqueado de caracteres
 language = "python"
-a, b, c, d, e, f = language 
+a, b, c, d, e, f = language
 print(a)
 print(e)
 
-# División 
+# División
 
 language_slice = language[1:3]
 print(language_slice)
@@ -49,4 +49,8 @@ print("1".isnumeric())
 print(language.lower())
 print(language.lower().isupper())
 print(language.startswith("py"))
-print("Py" == "py")
+
+if "Py" == "py":
+    {print("Es lo mismo")}
+else:
+    {print("No es lo mismo")}
